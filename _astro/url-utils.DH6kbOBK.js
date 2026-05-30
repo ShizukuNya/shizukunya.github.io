@@ -1,0 +1,1 @@
+import"./navBarConfig.DhxDCSZI.js";import"./zh_TW.DCWYDN2t.js";function u(o,n){const e=o.replace(/^\/|\/$/g,"").toLowerCase(),r=n.replace(/^\/|\/$/g,"").toLowerCase();return e===r}function t(...o){return o.join("/").replace(/\/+/g,"/")}function c(o){return t("","/shizukunya.github.io/",o)}export{u as p,c as u};
