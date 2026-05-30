@@ -5,8 +5,153 @@
   <link href="https://shizukunya.github.io/" rel="alternate" type="text/html"/>
   <link href="https://shizukunya.github.io/atom.xml" rel="self" type="application/atom+xml"/>
   <id>https://shizukunya.github.io/</id>
-  <updated>2026-05-30T11:38:01.369Z</updated>
+  <updated>2026-05-30T14:18:46.537Z</updated>
   <language>zh_CN</language>
+  <entry>
+    <title>创建一个你自己的博客</title>
+    <link href="https://shizukunya.github.io/posts/create-your-own-blog/" rel="alternate" type="text/html"/>
+    <id>https://shizukunya.github.io/posts/create-your-own-blog/</id>
+    <published>2026-05-30T00:00:00.000Z</published>
+    <updated>2026-05-30T00:00:00.000Z</updated>
+    <summary></summary>
+    <content type="html"><![CDATA[<h1>开始</h1>
+<p>你是否想和我一样拥有一个自己的博客呢，本篇文章将会教你通过两种方式来搭建属于自己的博客。</p>
+<p>首先你需要选择想要搭建博客的类型，这里共有两种选择~</p>
+<table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>&lt;iconify-icon icon="fe:wordpress"&gt;&lt;/iconify-icon&gt;WordPress</th>
+<th>&lt;iconify-icon icon="simple-icons:hexo"&gt;&lt;/iconify-icon&gt;Hexo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>核心定位</strong></td>
+<td>功能完整的动态内容管理系统，适合博客、企业站、电商等</td>
+<td>基于 Node.js 的静态博客生成器，偏向个人博客与技术文档</td>
+</tr>
+<tr>
+<td><strong>主要优点</strong></td>
+<td>✅ 开箱即用，自带 Web 后台&lt;br&gt;✅ 插件/主题生态极其丰富&lt;br&gt;✅ 支持多用户、评论、搜索、表单等动态功能&lt;br&gt;✅ 非技术人员友好</td>
+<td>✅ 纯静态页面，访问速度极快&lt;br&gt;✅ 无数据库，安全性高&lt;br&gt;✅ 可免费托管（GitHub Pages / Vercel / Netlify）&lt;br&gt;✅ 对 CDN 和 SEO 友好&lt;br&gt;✅ Markdown 写作，Git 版本管理</td>
+</tr>
+<tr>
+<td><strong>主要不足</strong></td>
+<td>❌ 需要服务器 + 数据库，运维成本较高&lt;br&gt;❌ 动态页面对服务器资源有要求&lt;br&gt;❌ 需定期维护安全、更新插件和核心&lt;br&gt;❌ 默认不适合纯 Markdown 写作流</td>
+<td>❌ 无原生后台，多设备写作需同步环境&lt;br&gt;❌ 动态功能依赖第三方服务（评论、搜索等）&lt;br&gt;❌ 对新手有一定技术门槛&lt;br&gt;❌ 每次更新需重新生成并部署</td>
+</tr>
+<tr>
+<td><strong>部署环境</strong></td>
+<td>- Web 服务器（Nginx / Apache）&lt;br&gt;- PHP + MySQL / MariaDB&lt;br&gt;- 支持一键安装（LAMP / WAMP / 宝塔）</td>
+<td>- 本地：Node.js + Git&lt;br&gt;- 生成后为纯静态文件&lt;br&gt;- 可部署至 GitHub Pages / Vercel / Netlify / OSS + CDN</td>
+</tr>
+</tbody>
+</table>
+<p>以上为两个类型的区别及优劣点，大家可根据自己需求和喜好进行选择~</p>
+<h1>WordPress篇</h1>
+<blockquote>
+<p>[!NOTE]
+这个写起来有点麻烦，暑假再写吧。<s>（咕咕咕）</s></p>
+</blockquote>
+<h1>Hexo篇</h1>
+<p>本篇以Windows系列系统作为演示，其他系统大差不差，动手能力强的猫猫建议查阅官方文档~</p>
+<h2>准备工作</h2>
+<p>需要的环境有：</p>
+<ul>
+<li><a href="https://nodejs.org/zh-cn">Node.js</a>(最低版本10.13，建议使用12.0及以上版本)</li>
+<li><a href="https://git-scm.com/">Git</a></li>
+</ul>
+<blockquote>
+<p>[!NOTE]
+在Windows环境下安装Node.js时，请确保勾选 Add to PATH 选项（默认已勾选）</p>
+</blockquote>
+<p>安装完毕后，建议按键盘上的 &lt;iconify-icon icon="basil:windows-solid"&gt;&lt;/iconify-icon&gt; + <code>R</code> 打开「运行」，然后输入<code>cmd</code>或<code>powershell</code>打开终端分别输入<code>git --version</code>和<code>node --version</code>查看是否安装完成，若能看到类似下图所示的内容，恭喜你安装完成🎉</p>
+<p><img src="FF5FEF02A6C4434D84EDC8FBD947442A.png" alt="Nya" /></p>
+<h2>安装Hexo</h2>
+<blockquote>
+<p>[!IMPORTANT]
+注意，本章节下所有命令均在上文中提到的<code>终端</code>中完成。</p>
+</blockquote>
+<p>所有必备的应用程序安装完成后，即可使用<code>npm</code>安装<code>Hexo</code>。</p>
+<pre><code>npm install -g hexo-cli
+</code></pre>
+<h2>建站</h2>
+<p>我们可以使用<code>hexo init</code>创建一个新的<code>Hexo</code>博客项目：</p>
+<pre><code># 这里的 my-blog 是你的博客项目名称
+hexo init my-blog
+</code></pre>
+<p>然后，进入博客目录</p>
+<pre><code>cd my-blog
+</code></pre>
+<p>所需要的依赖在<code>hexo init</code>的时候就已经安装了，我们这里可以先开启本地服务器看一下博客页面：</p>
+<pre><code># hexo sever 与它一样
+hexo s
+</code></pre>
+<p>如果没什么问题访问<a href="http://localhost:4000">http://localhost:4000</a>应该是如下图，正常显示：</p>
+<p><img src="QQ20260523-223651.png" alt="def_blog" /></p>
+<p>默认主题太丑了，让我们给它换上<a href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a>主题。当然，你也可以选其他主题，请见<a href="https://hexo.io/themes/">主题列表</a></p>
+<h2>安装主题</h2>
+<p>首先,在主题目录下执行以下命令:</p>
+<pre><code># --depth 1 让git只克隆最后一次commit，加快克隆速度
+git clone --depth 1 -b master https://gitee.com/immyw/hexo-theme-butterfly.git themes/butterfly
+</code></pre>
+<p>等待克隆完成后，修改<code>_config.yml</code>文件，把主题更改为<code>Butterfly</code></p>
+<pre><code>theme: butterfly
+</code></pre>
+<p>之后保存配置文件，执行以下命令安装<code>Butterfly</code>主题运行所需插件</p>
+<pre><code>npm install hexo-renderer-pug hexo-renderer-stylus --save
+</code></pre>
+<h2>配置主题</h2>
+<blockquote>
+<p>[!NOTE]
+为了方便以后对主题进行升级，强烈建议把主题配置文件单独放在<code>Hexo</code>项目根目录下</p>
+</blockquote>
+<p>在 hexo 的根目录创建一个文件<code>_config.butterfly.yml</code>，并把主题目录的<code>_config.yml</code>内容复制到<code>_config.butterfly.yml</code>去。</p>
+<blockquote>
+<p>[!IMPORTANT]
+注意:</p>
+<p>复制的是主题的<code>_config.yml</code>，而不是<code>Hexo</code>的<code>_config.yml</code></p>
+<p>不要把主题目录的<code>_config.yml</code>删掉</p>
+<p>以后只需要在<code>_config.butterfly.yml</code>进行配置就行。如果使用了<code>_config.butterfly.yml</code>， 配置主题的<code>_config.yml</code>将不会有效果。</p>
+</blockquote>
+<p>Hexo 会自动合并主题中的<code>_config.yml</code>和<code>_config.butterfly.yml</code>里的配置，如果存在同名配置，会使用<code>_config.butterfly.yml</code>的配置，其优先度较高。</p>
+<p>现在，你的博客就已经变得非常不错了，有关<code>Butterfly</code>配置文件的进一步探索，详情请见<a href="https://butterfly.js.org/posts/dc584b87/">配置文档</a></p>
+<h2>部署到Github Pages</h2>
+<blockquote>
+<p>[!NOTE]
+如果你没有Github账号，请<a href="https://github.com/signup">点击此处</a>来注册一个账号。注册所使用的邮箱建议使用QQ邮箱，格式为{你的QQ号}@qq.com</p>
+</blockquote>
+<p>首先，在Github上创建一个公开仓库，其名称建议为<code>{你的Github用户名}.github.io</code>。当然，你也可以选择使用自定义域名，详情这里不过多赘述，请自行查找。</p>
+<p>创建完成后，复制Git链接备用。</p>
+<p>接下来我们在<code>Hexo</code>项目根目录下执行以下命令，安装<a href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a></p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre>
+<p>编辑 <code>_config.yml</code> （示例值如下所示）：</p>
+<pre><code>deploy:
+  type: "git"
+  repo: https://github.com/{你的GitHub用户名}/{你刚刚创建的仓库的名称}.git # 就是你创建仓库后复制的Git链接。
+  branch: main
+</code></pre>
+<p>保存配置文件，在终端执行以下命令，构建文件并上传：</p>
+<pre><code>hexo clean
+hexo g
+hexo d
+</code></pre>
+<blockquote>
+<p>[!NOTE]</p>
+<ul>
+<li>除非你使用<strong>令牌</strong>或 <strong>SSH 密钥认证</strong>，否则你会被提示提供目标仓库的用户名和密码。</li>
+<li><code>hexo-deployer-git</code>并不会存储你的用户名和密码。 请使用<a href="https://git-scm.com/docs/git-credential-cache">git-credential-cache</a>来临时存储它们。</li>
+</ul>
+</blockquote>
+<p>上传完成后请稍等片刻，你的博客大概率就能在{你的Github用户名}.github.io里看见了。</p>
+]]></content>
+    <author>
+      <name>星雫</name>
+    </author>
+    <category term="教程"></category>
+  </entry>
   <entry>
     <title>git命令</title>
     <link href="https://shizukunya.github.io/posts/git-command/" rel="alternate" type="text/html"/>

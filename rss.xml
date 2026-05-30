@@ -1,4 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>星雫の小窝</title><description>感谢你在『世界』的角落里找到我</description><link>https://shizukunya.github.io/</link><language>zh_CN</language><item><title>git命令</title><link>https://shizukunya.github.io/posts/git-command/</link><guid isPermaLink="true">https://shizukunya.github.io/posts/git-command/</guid><pubDate>Sat, 30 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;起因&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>星雫の小窝</title><description>感谢你在『世界』的角落里找到我</description><link>https://shizukunya.github.io/</link><language>zh_CN</language><item><title>创建一个你自己的博客</title><link>https://shizukunya.github.io/posts/create-your-own-blog/</link><guid isPermaLink="true">https://shizukunya.github.io/posts/create-your-own-blog/</guid><pubDate>Sat, 30 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;开始&lt;/h1&gt;
+&lt;p&gt;你是否想和我一样拥有一个自己的博客呢，本篇文章将会教你通过两种方式来搭建属于自己的博客。&lt;/p&gt;
+&lt;p&gt;首先你需要选择想要搭建博客的类型，这里共有两种选择~&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;对比维度&lt;/th&gt;
+&lt;th&gt;&amp;lt;iconify-icon icon=&quot;fe:wordpress&quot;&amp;gt;&amp;lt;/iconify-icon&amp;gt;WordPress&lt;/th&gt;
+&lt;th&gt;&amp;lt;iconify-icon icon=&quot;simple-icons:hexo&quot;&amp;gt;&amp;lt;/iconify-icon&amp;gt;Hexo&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;核心定位&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;功能完整的动态内容管理系统，适合博客、企业站、电商等&lt;/td&gt;
+&lt;td&gt;基于 Node.js 的静态博客生成器，偏向个人博客与技术文档&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;主要优点&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;✅ 开箱即用，自带 Web 后台&amp;lt;br&amp;gt;✅ 插件/主题生态极其丰富&amp;lt;br&amp;gt;✅ 支持多用户、评论、搜索、表单等动态功能&amp;lt;br&amp;gt;✅ 非技术人员友好&lt;/td&gt;
+&lt;td&gt;✅ 纯静态页面，访问速度极快&amp;lt;br&amp;gt;✅ 无数据库，安全性高&amp;lt;br&amp;gt;✅ 可免费托管（GitHub Pages / Vercel / Netlify）&amp;lt;br&amp;gt;✅ 对 CDN 和 SEO 友好&amp;lt;br&amp;gt;✅ Markdown 写作，Git 版本管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;主要不足&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;❌ 需要服务器 + 数据库，运维成本较高&amp;lt;br&amp;gt;❌ 动态页面对服务器资源有要求&amp;lt;br&amp;gt;❌ 需定期维护安全、更新插件和核心&amp;lt;br&amp;gt;❌ 默认不适合纯 Markdown 写作流&lt;/td&gt;
+&lt;td&gt;❌ 无原生后台，多设备写作需同步环境&amp;lt;br&amp;gt;❌ 动态功能依赖第三方服务（评论、搜索等）&amp;lt;br&amp;gt;❌ 对新手有一定技术门槛&amp;lt;br&amp;gt;❌ 每次更新需重新生成并部署&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;部署环境&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;- Web 服务器（Nginx / Apache）&amp;lt;br&amp;gt;- PHP + MySQL / MariaDB&amp;lt;br&amp;gt;- 支持一键安装（LAMP / WAMP / 宝塔）&lt;/td&gt;
+&lt;td&gt;- 本地：Node.js + Git&amp;lt;br&amp;gt;- 生成后为纯静态文件&amp;lt;br&amp;gt;- 可部署至 GitHub Pages / Vercel / Netlify / OSS + CDN&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;以上为两个类型的区别及优劣点，大家可根据自己需求和喜好进行选择~&lt;/p&gt;
+&lt;h1&gt;WordPress篇&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+这个写起来有点麻烦，暑假再写吧。&lt;s&gt;（咕咕咕）&lt;/s&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;Hexo篇&lt;/h1&gt;
+&lt;p&gt;本篇以Windows系列系统作为演示，其他系统大差不差，动手能力强的猫猫建议查阅官方文档~&lt;/p&gt;
+&lt;h2&gt;准备工作&lt;/h2&gt;
+&lt;p&gt;需要的环境有：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://nodejs.org/zh-cn&quot;&gt;Node.js&lt;/a&gt;(最低版本10.13，建议使用12.0及以上版本)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+在Windows环境下安装Node.js时，请确保勾选 Add to PATH 选项（默认已勾选）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;安装完毕后，建议按键盘上的 &amp;lt;iconify-icon icon=&quot;basil:windows-solid&quot;&amp;gt;&amp;lt;/iconify-icon&amp;gt; + &lt;code&gt;R&lt;/code&gt; 打开「运行」，然后输入&lt;code&gt;cmd&lt;/code&gt;或&lt;code&gt;powershell&lt;/code&gt;打开终端分别输入&lt;code&gt;git --version&lt;/code&gt;和&lt;code&gt;node --version&lt;/code&gt;查看是否安装完成，若能看到类似下图所示的内容，恭喜你安装完成🎉&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;FF5FEF02A6C4434D84EDC8FBD947442A.png&quot; alt=&quot;Nya&quot; /&gt;&lt;/p&gt;
+&lt;h2&gt;安装Hexo&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!IMPORTANT]
+注意，本章节下所有命令均在上文中提到的&lt;code&gt;终端&lt;/code&gt;中完成。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所有必备的应用程序安装完成后，即可使用&lt;code&gt;npm&lt;/code&gt;安装&lt;code&gt;Hexo&lt;/code&gt;。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install -g hexo-cli
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;建站&lt;/h2&gt;
+&lt;p&gt;我们可以使用&lt;code&gt;hexo init&lt;/code&gt;创建一个新的&lt;code&gt;Hexo&lt;/code&gt;博客项目：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 这里的 my-blog 是你的博客项目名称
+hexo init my-blog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后，进入博客目录&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd my-blog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;所需要的依赖在&lt;code&gt;hexo init&lt;/code&gt;的时候就已经安装了，我们这里可以先开启本地服务器看一下博客页面：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# hexo sever 与它一样
+hexo s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果没什么问题访问&lt;a href=&quot;http://localhost:4000&quot;&gt;http://localhost:4000&lt;/a&gt;应该是如下图，正常显示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;QQ20260523-223651.png&quot; alt=&quot;def_blog&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;默认主题太丑了，让我们给它换上&lt;a href=&quot;https://github.com/jerryc127/hexo-theme-butterfly&quot;&gt;Butterfly&lt;/a&gt;主题。当然，你也可以选其他主题，请见&lt;a href=&quot;https://hexo.io/themes/&quot;&gt;主题列表&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;安装主题&lt;/h2&gt;
+&lt;p&gt;首先,在主题目录下执行以下命令:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# --depth 1 让git只克隆最后一次commit，加快克隆速度
+git clone --depth 1 -b master https://gitee.com/immyw/hexo-theme-butterfly.git themes/butterfly
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;等待克隆完成后，修改&lt;code&gt;_config.yml&lt;/code&gt;文件，把主题更改为&lt;code&gt;Butterfly&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;theme: butterfly
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;之后保存配置文件，执行以下命令安装&lt;code&gt;Butterfly&lt;/code&gt;主题运行所需插件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install hexo-renderer-pug hexo-renderer-stylus --save
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;配置主题&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+为了方便以后对主题进行升级，强烈建议把主题配置文件单独放在&lt;code&gt;Hexo&lt;/code&gt;项目根目录下&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在 hexo 的根目录创建一个文件&lt;code&gt;_config.butterfly.yml&lt;/code&gt;，并把主题目录的&lt;code&gt;_config.yml&lt;/code&gt;内容复制到&lt;code&gt;_config.butterfly.yml&lt;/code&gt;去。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!IMPORTANT]
+注意:&lt;/p&gt;
+&lt;p&gt;复制的是主题的&lt;code&gt;_config.yml&lt;/code&gt;，而不是&lt;code&gt;Hexo&lt;/code&gt;的&lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;不要把主题目录的&lt;code&gt;_config.yml&lt;/code&gt;删掉&lt;/p&gt;
+&lt;p&gt;以后只需要在&lt;code&gt;_config.butterfly.yml&lt;/code&gt;进行配置就行。如果使用了&lt;code&gt;_config.butterfly.yml&lt;/code&gt;， 配置主题的&lt;code&gt;_config.yml&lt;/code&gt;将不会有效果。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Hexo 会自动合并主题中的&lt;code&gt;_config.yml&lt;/code&gt;和&lt;code&gt;_config.butterfly.yml&lt;/code&gt;里的配置，如果存在同名配置，会使用&lt;code&gt;_config.butterfly.yml&lt;/code&gt;的配置，其优先度较高。&lt;/p&gt;
+&lt;p&gt;现在，你的博客就已经变得非常不错了，有关&lt;code&gt;Butterfly&lt;/code&gt;配置文件的进一步探索，详情请见&lt;a href=&quot;https://butterfly.js.org/posts/dc584b87/&quot;&gt;配置文档&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;部署到Github Pages&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+如果你没有Github账号，请&lt;a href=&quot;https://github.com/signup&quot;&gt;点击此处&lt;/a&gt;来注册一个账号。注册所使用的邮箱建议使用QQ邮箱，格式为{你的QQ号}@qq.com&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先，在Github上创建一个公开仓库，其名称建议为&lt;code&gt;{你的Github用户名}.github.io&lt;/code&gt;。当然，你也可以选择使用自定义域名，详情这里不过多赘述，请自行查找。&lt;/p&gt;
+&lt;p&gt;创建完成后，复制Git链接备用。&lt;/p&gt;
+&lt;p&gt;接下来我们在&lt;code&gt;Hexo&lt;/code&gt;项目根目录下执行以下命令，安装&lt;a href=&quot;https://github.com/hexojs/hexo-deployer-git&quot;&gt;hexo-deployer-git&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install hexo-deployer-git --save
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;编辑 &lt;code&gt;_config.yml&lt;/code&gt; （示例值如下所示）：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;deploy:
+  type: &quot;git&quot;
+  repo: https://github.com/{你的GitHub用户名}/{你刚刚创建的仓库的名称}.git # 就是你创建仓库后复制的Git链接。
+  branch: main
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;保存配置文件，在终端执行以下命令，构建文件并上传：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hexo clean
+hexo g
+hexo d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;除非你使用&lt;strong&gt;令牌&lt;/strong&gt;或 &lt;strong&gt;SSH 密钥认证&lt;/strong&gt;，否则你会被提示提供目标仓库的用户名和密码。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hexo-deployer-git&lt;/code&gt;并不会存储你的用户名和密码。 请使用&lt;a href=&quot;https://git-scm.com/docs/git-credential-cache&quot;&gt;git-credential-cache&lt;/a&gt;来临时存储它们。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上传完成后请稍等片刻，你的博客大概率就能在{你的Github用户名}.github.io里看见了。&lt;/p&gt;
+</content:encoded></item><item><title>git命令</title><link>https://shizukunya.github.io/posts/git-command/</link><guid isPermaLink="true">https://shizukunya.github.io/posts/git-command/</guid><pubDate>Sat, 30 May 2026 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;起因&lt;/h1&gt;
 &lt;p&gt;因为总是忘记&lt;a href=&quot;https://git-scm.com/&quot;&gt;&amp;lt;iconify-icon icon=&quot;mdi:git&quot;&amp;gt;&amp;lt;/iconify-icon&amp;gt;Git&lt;/a&gt;的各种命令，每次去搜索引擎查又不方便，故写下此文，既方便自己使用，又能&lt;s&gt;maybe&lt;/s&gt;帮助到看这篇文章的你，一举两得(～￣▽￣)～&lt;/p&gt;
 &lt;h1&gt;开始&lt;/h1&gt;
 &lt;p&gt;&lt;img src=&quot;git-command.jpg&quot; alt=&quot;git命令&quot; title=&quot;git命令速查表&quot; /&gt;&lt;/p&gt;
