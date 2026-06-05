@@ -12,7 +12,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;strong&gt;核心定位&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;功能完整的动态内容管理系统，适合博客、企业站、电商等&lt;/td&gt;
+&lt;td&gt;功能完整的动态内容管理系统，适合博客、企业站、电商&lt;/td&gt;
 &lt;td&gt;基于 Node.js 的静态博客生成器，偏向个人博客与技术文档&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
