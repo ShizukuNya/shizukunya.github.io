@@ -6,7 +6,7 @@ const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 export const siteConfig: SiteConfig = {
   title: "星雫の小窝",
   subtitle: "感谢你在『世界』的角落里找到我",
-  siteURL: "https://shizukunya.github.io/", // 请替换为你的站点URL，以斜杠结尾
+  siteURL: "https://blog.nekoqwq.top/", // 请替换为你的站点URL，以斜杠结尾
   siteStartDate: "2026-05-15", // 站点开始运行日期，用于站点统计组件计算运行天数
 
   lang: SITE_LANG,
