@@ -2,15 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>星雫の小窝</title>
   <subtitle>感谢你在『世界』的角落里找到我</subtitle>
-  <link href="https://shizukunya.github.io/" rel="alternate" type="text/html"/>
-  <link href="https://shizukunya.github.io/atom.xml" rel="self" type="application/atom+xml"/>
-  <id>https://shizukunya.github.io/</id>
-  <updated>2026-06-19T09:03:56.411Z</updated>
+  <link href="https://blog.nekoqwq.top/" rel="alternate" type="text/html"/>
+  <link href="https://blog.nekoqwq.top/atom.xml" rel="self" type="application/atom+xml"/>
+  <id>https://blog.nekoqwq.top/</id>
+  <updated>2026-06-21T12:15:03.029Z</updated>
   <language>zh_CN</language>
   <entry>
     <title>创建一个你自己的博客</title>
-    <link href="https://shizukunya.github.io/posts/create-your-own-blog/" rel="alternate" type="text/html"/>
-    <id>https://shizukunya.github.io/posts/create-your-own-blog/</id>
+    <link href="https://blog.nekoqwq.top/posts/create-your-own-blog/" rel="alternate" type="text/html"/>
+    <id>https://blog.nekoqwq.top/posts/create-your-own-blog/</id>
     <published>2026-05-30T00:00:00.000Z</published>
     <updated>2026-05-30T00:00:00.000Z</updated>
     <summary></summary>
@@ -154,8 +154,8 @@ hexo d
   </entry>
   <entry>
     <title>git命令</title>
-    <link href="https://shizukunya.github.io/posts/git-command/" rel="alternate" type="text/html"/>
-    <id>https://shizukunya.github.io/posts/git-command/</id>
+    <link href="https://blog.nekoqwq.top/posts/git-command/" rel="alternate" type="text/html"/>
+    <id>https://blog.nekoqwq.top/posts/git-command/</id>
     <published>2026-05-30T00:00:00.000Z</published>
     <updated>2026-05-30T00:00:00.000Z</updated>
     <summary></summary>
@@ -260,8 +260,8 @@ git fsck
   </entry>
   <entry>
     <title>测试</title>
-    <link href="https://shizukunya.github.io/posts/%E6%B5%8B%E8%AF%95/" rel="alternate" type="text/html"/>
-    <id>https://shizukunya.github.io/posts/%E6%B5%8B%E8%AF%95/</id>
+    <link href="https://blog.nekoqwq.top/posts/%E6%B5%8B%E8%AF%95/" rel="alternate" type="text/html"/>
+    <id>https://blog.nekoqwq.top/posts/%E6%B5%8B%E8%AF%95/</id>
     <published>2026-05-30T00:00:00.000Z</published>
     <updated>2026-05-30T00:00:00.000Z</updated>
     <summary></summary>
