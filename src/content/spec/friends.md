@@ -10,9 +10,9 @@
 >   > ```
 > - 站点链接：
 >   > ```
->   > https://shizukunya.github.io
+>   > https://blog.nekoqwq.top/
 >   > ```
 > - 头像链接：
 >   > ```
->   > https://shizukunya.github.io/_astro/avatar.O5Io59Zw_Z8MDTC.webp
+>   > https://blog.nekoqwq.top/_astro/avatar.O5Io59Zw_Z8MDTC.webp
 >   > ```
