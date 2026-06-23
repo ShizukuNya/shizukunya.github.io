@@ -29,6 +29,22 @@ export const friendsData: FriendItem[] = [
     siteurl: "https://docs.mizuki.mysqil.com",
     tags: ["Docs"],
   },
+  {
+    id: 3,
+    title: "谢县广",
+    imgurl: "https://www.xiexianguang.com/favicon.ico",
+    desc: "永远相信美好的事情即将发生",
+    siteurl: "https://www.xiexianguang.com",
+    tags: ["Friend"],
+  },
+  {
+    id: 4,
+    title: "Echo",
+    imgurl: "https://liveout.cn/usr/uploads/pic/icon1.jpg",
+    desc: "Life is code. I will debug it.",
+    siteurl: "https://www.liveout.cn/",
+    tags: ["Friend"],
+  },
 ];
 
 // 获取所有友情链接数据
