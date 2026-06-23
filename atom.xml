@@ -5,12 +5,12 @@
   <link href="https://blog.nekoqwq.top/" rel="alternate" type="text/html"/>
   <link href="https://blog.nekoqwq.top/atom.xml" rel="self" type="application/atom+xml"/>
   <id>https://blog.nekoqwq.top/</id>
-  <updated>2026-06-22T12:14:14.406Z</updated>
+  <updated>2026-06-23T14:39:16.856Z</updated>
   <language>zh_CN</language>
   <entry>
     <title>创建一个你自己的博客</title>
-    <link href="https://blog.nekoqwq.top/posts/create-your-own-blog/" rel="alternate" type="text/html"/>
-    <id>https://blog.nekoqwq.top/posts/create-your-own-blog/</id>
+    <link href="https://blog.nekoqwq.top/2026/05/30/create-your-own-blog/" rel="alternate" type="text/html"/>
+    <id>https://blog.nekoqwq.top/2026/05/30/create-your-own-blog/</id>
     <published>2026-05-30T00:00:00.000Z</published>
     <updated>2026-05-30T00:00:00.000Z</updated>
     <summary></summary>
@@ -154,8 +154,8 @@ hexo d
   </entry>
   <entry>
     <title>git命令</title>
-    <link href="https://blog.nekoqwq.top/posts/git-command/" rel="alternate" type="text/html"/>
-    <id>https://blog.nekoqwq.top/posts/git-command/</id>
+    <link href="https://blog.nekoqwq.top/2026/05/30/git-command/" rel="alternate" type="text/html"/>
+    <id>https://blog.nekoqwq.top/2026/05/30/git-command/</id>
     <published>2026-05-30T00:00:00.000Z</published>
     <updated>2026-05-30T00:00:00.000Z</updated>
     <summary></summary>
@@ -260,8 +260,8 @@ git fsck
   </entry>
   <entry>
     <title>测试</title>
-    <link href="https://blog.nekoqwq.top/posts/%E6%B5%8B%E8%AF%95/" rel="alternate" type="text/html"/>
-    <id>https://blog.nekoqwq.top/posts/%E6%B5%8B%E8%AF%95/</id>
+    <link href="https://blog.nekoqwq.top/2026/05/30/%E6%B5%8B%E8%AF%95/" rel="alternate" type="text/html"/>
+    <id>https://blog.nekoqwq.top/2026/05/30/%E6%B5%8B%E8%AF%95/</id>
     <published>2026-05-30T00:00:00.000Z</published>
     <updated>2026-05-30T00:00:00.000Z</updated>
     <summary></summary>
