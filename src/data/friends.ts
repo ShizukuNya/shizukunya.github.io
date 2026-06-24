@@ -45,6 +45,22 @@ export const friendsData: FriendItem[] = [
     siteurl: "https://www.liveout.cn/",
     tags: ["Friend"],
   },
+  {
+    id: 5,
+    title: "罗德岛 PRTS",
+    imgurl: "https://bu.dusays.com/2026/03/24/69c1e38b4c370.jpg",
+    desc: "记录泰拉大陆的各项数据与前文明遗迹，愿源石的阴霾早日散去。",
+    siteurl: "https://prts.wiki",
+    tags: ["Friend"],
+  },
+  {
+    id: 6,
+    title: "XingHuiSamaの宝藏之地",
+    imgurl: "https://bu.dusays.com/2026/03/24/69c1e38ac1846.jpg",
+    desc: "今天我也要学习吗",
+    siteurl: "https://www.xinghuisama.top",
+    tags: ["Friend"],
+  },
 ];
 
 // 获取所有友情链接数据
