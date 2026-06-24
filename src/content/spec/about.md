@@ -8,6 +8,6 @@
 
 # 目标
 
-- 考个好大学
-- 学习前端
-- 学习[<iconify-icon icon="devicon:rust"></iconify-icon>Rust](https://rust-lang.org/zh-CN/)
+- [ ] 考个好大学
+- [ ] 学习前端
+- [ ] 学习[<iconify-icon icon="devicon:rust"></iconify-icon>Rust](https://rust-lang.org/zh-CN/)
